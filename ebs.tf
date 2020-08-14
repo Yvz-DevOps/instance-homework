@@ -6,7 +6,7 @@ resource "aws_ebs_volume" "web" {
 
 resource "aws_volume_attachment" "ebs_att" {
     device_name = "/dev/sdc"
-    volume_id = "${aws_ebs_volume.myebs.id}"
+    volume_id = "${aws_ebs_volume.web.id}"
     instance_id = "${aws_instance.web.id}"
 }
 
