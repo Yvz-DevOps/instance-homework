@@ -1,4 +1,4 @@
-resource "aws_security-group" "allow_ssh" {
+resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow TLS inbound traffic"
 
@@ -18,7 +18,7 @@ resource "aws_security-group" "allow_ssh" {
   }
 }
 
-resource "aws_security-group" "allow_http_https" {
+resource "aws_security_group" "allow_http_https" {
   name        = "allow_http_https"
   description = "Allow TLS inbound traffic"
   ingress {
