@@ -1,5 +1,5 @@
 resource "aws_route53_record" "www" {
-  zone_id = "Z055198750KNUH6D2J7K"
+  zone_id = "Z06528912840OFLNFP3WA"
   name    = "www.hyavuz.com"
   type    = "A"
   ttl     = "60"
