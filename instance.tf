@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
   key_name      = "${aws_key_pair.oregonkey.key_name}"
   user_data     = "${file("userdata.sh")}"
   vpc_security_group_ids = ["${aws_security_group.allow_ssh.id}"]
-  availability_zone = "us-west-2"
+  availability_zone = "us-west-2a"
 }
 
 
