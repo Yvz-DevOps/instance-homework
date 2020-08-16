@@ -10,6 +10,15 @@ resource "aws_instance" "web" {
     "${aws_security_group.allow_httpd.id}"
     ]
   availability_zone = "us-west-2a"
+  
+  
+    tags = {
+        Name = "HelloWorld"
+        Env = "Development"
+        Client = "panera_bread"
+        Team = "DevOps"
+        Created_by = "Yavuz"
+    }
 }
 
 
