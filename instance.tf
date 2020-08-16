@@ -7,6 +7,15 @@ resource "aws_instance" "web" {
   user_data     = "${file("userdata.sh")}"
   vpc_security_group_ids = ["${aws_security_group.allow_ssh.id}"]
   availability_zone = "us-west-2a"
+  
+  
+    tags = {
+        Name = "HelloWorld"
+        Env = "Development"
+        Client = "panera_bread"
+        Team = "DevOps"
+        Created_by = "Yavuz"
+    }
 }
 
 
