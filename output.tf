@@ -18,6 +18,3 @@ output "PUB-DNS" {
   value       = "${aws_instance.web.public_dns}"
 }
 
-output "message" {
-  value       = "login to wordpress and change password"
-}
