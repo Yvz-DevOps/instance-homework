@@ -19,5 +19,5 @@ output "PUB-DNS" {
 }
 
 output "message" {
-  value       = "${login to wordpress and change password}"
+  value       = "login to wordpress and change password"
 }
